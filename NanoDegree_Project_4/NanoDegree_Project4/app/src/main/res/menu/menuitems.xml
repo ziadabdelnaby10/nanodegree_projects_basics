@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="always"
+        android:icon="@drawable/ic_queue_music_black_24dp"
+        android:title="Music Library"
+        android:id="@+id/library"/>
+
+    <item
+        app:showAsAction="always"
+        android:icon="@drawable/ic_play_circle_filled_black_24dp"
+        android:title="Listen Now"
+        android:id="@+id/listen"/>
+</menu>
