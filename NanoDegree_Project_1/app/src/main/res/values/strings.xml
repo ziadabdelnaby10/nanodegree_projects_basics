@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NanoDegree_Project_1</string>
+    <string name="the_bussines_icon">The Bussines Icon</string>
+    <string name="the_images_in_the_viewpager">The Images in the Viewpager</string>
+</resources>
