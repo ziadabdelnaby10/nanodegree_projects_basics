@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center|top">
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="first"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_below="@id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/txtFirstOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginRight="30dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txtFirstGoal"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txtFirstFoul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/layout_1"
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outs"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goals"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fouls"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/layout_2"
+        android:id="@+id/layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:background="@drawable/btn_first"
+            android:onClick="incFirstOut"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Out"
+            android:textSize="11sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:background="@drawable/btn_first"
+            android:onClick="incFirstGoal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Goal"
+            android:textSize="11sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:background="@drawable/btn_first"
+            android:onClick="incFirstFoul"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Foul"
+            android:textSize="11sp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/layout_4"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/layout_3"
+        android:layout_margin="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/layout_4"
+        android:id="@+id/secondName"
+        android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="second"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_below="@id/secondName"
+        android:id="@+id/layout_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtSecondOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginRight="30dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txtSecondGoal"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txtSecondFoul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/layout_5"
+        android:id="@+id/layout_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outs"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goals"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fouls"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/layout_6"
+        android:id="@+id/layout_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:onClick="incSecondOut"
+            android:background="@drawable/btn_second"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Out"
+            android:textSize="11sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:background="@drawable/btn_second"
+            android:onClick="incSecondGoal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Goal"
+            android:textSize="11sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:background="@drawable/btn_second"
+            android:onClick="incSecondFoul"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Foul"
+            android:textSize="11sp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:onClick="resetTheScore"
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"/>
+
+</RelativeLayout>
