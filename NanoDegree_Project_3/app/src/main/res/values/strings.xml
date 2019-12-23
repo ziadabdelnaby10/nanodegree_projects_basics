@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Quizy</string>
+    <string name="question1">How Many Months In The Year ?</string>
+    <string name="question2">Who Discovered Gravity ?</string>
+    <string name="question3">The polygon is a shape that consists of how many vertices ?</string>
+    <string name="question4">How Many Players In The Football Team ?</string>
+    <string name="next">Next</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+</resources>
